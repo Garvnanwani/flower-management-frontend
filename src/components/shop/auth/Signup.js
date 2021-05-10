@@ -80,10 +80,10 @@ const Signup = (props) => {
                         type="text"
                         id="name"
                         className={`${
-                            data.error.name ? 'border-red-500' : ''
+                            data.error ? 'border-red-500' : ''
                         } px-4 py-2 focus:outline-none border`}
                     />
-                    {!data.error ? '' : alert(data.error.name, 'red')}
+                    {!data.error ? '' : alert(data.error, 'red')}
                 </div>
                 <div className="flex flex-col">
                     <label htmlFor="email">
@@ -103,10 +103,10 @@ const Signup = (props) => {
                         type="email"
                         id="email"
                         className={`${
-                            data.error.email ? 'border-red-500' : ''
+                            data.error ? 'border-red-500' : ''
                         } px-4 py-2 focus:outline-none border`}
                     />
-                    {!data.error ? '' : alert(data.error.email, 'red')}
+                    {!data.error ? '' : alert(data.error, 'red')}
                 </div>
                 <div className="flex flex-col">
                     <label htmlFor="password">
@@ -126,10 +126,10 @@ const Signup = (props) => {
                         type="password"
                         id="password"
                         className={`${
-                            data.error.password ? 'border-red-500' : ''
+                            data.error ? 'border-red-500' : ''
                         } px-4 py-2 focus:outline-none border`}
                     />
-                    {!data.error ? '' : alert(data.error.password, 'red')}
+                    {!data.error ? '' : alert(data.error, 'red')}
                 </div>
                 <div className="flex flex-col">
                     <label htmlFor="cPassword">
